@@ -1,0 +1,138 @@
+* {
+    font-family: sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #18181B;
+    width: 100%;
+    height: 100vh;
+}
+
+.logo {
+    width: 37.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.container-input {
+    width: 30rem;
+    margin: 0.875rem 0;    
+}
+
+.container-input {
+    color: #fff;
+    font-size: 1.375rem;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    border-radius: 5px;
+    background: #DFDFDF;
+    height: 8px;
+    outline: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%; 
+    background: #2796ee;
+    cursor: grab;
+    transition: all 0.25s;
+}
+
+.slider::-webkit-slider-thumb:hover {
+    transform: scale(1.15);
+}
+
+.button-cta {
+    height: 2.5rem;
+    background-color: #2796ee;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 2.5rem;
+    font-weight: bolder;
+    font-size: 1.125rem;
+    transition: all 0.2s;
+}
+
+.button-cta:hover {
+    transform: scale(1.1);
+    box-shadow:
+    0 0 7px 3px #fff,
+    0 0 11px 6px #2796ee, 
+    0 0 16px 9px #3ba7ff; 
+}
+
+.button-cta:active {
+    transform: scale(0.99);
+}
+
+.container-password {
+    width: 30rem;
+    margin: 0.875rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.title {
+    text-align: center;
+    color: #fff;
+    font-size: 1.75rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.password {
+    height: 3.75rem;
+    background-color: rgba(0, 0, 0, 0.40);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border: 1px solid #313131;
+    transition: all 0.5s;
+}
+
+.password:hover {
+    transform: scale(1.05);
+}
+
+.tooltip {
+    color: #fff;
+    position: relative;
+    top: 1.25rem;
+    padding: 0.375rem 0.5rem;
+    background: rgb(15, 15, 15);
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.hide {
+    display: none;
+}
+
+.container-password:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
